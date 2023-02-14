@@ -19,4 +19,9 @@ class ComicsController extends Controller
         $comic = Comic::findOrFail($id);
         return view('admin.comics.show', compact('comic'));
     }
+
+
+    public function create()
+    {
+    }
 }
