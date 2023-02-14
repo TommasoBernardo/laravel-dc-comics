@@ -25,4 +25,20 @@ class ComicsController extends Controller
     {
         return view('admin.comics.create');
     }
+
+    public function store(Request $request)
+    {
+        $data = $request->all();
+        $newComic = new Comic();
+        $newComic->title = $data['title'];
+        $newComic->description = $data['description'];
+        $newComic->img_path = $data['thumb'];
+        $newComic->price = $data['price'];
+        $newComic->series = $data['series'];
+        $newComic->sale_date = $data['sale_date'];
+        $newComic->type = $data['type'];
+        $newComic->save();
+
+        return redirect()->route('comics.show', $newComic->id);
+    }
 }

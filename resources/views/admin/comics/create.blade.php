@@ -6,7 +6,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <form>
+                    <form action="{{ route('comics.store') }}" method="post">
+                        @csrf
                         <div class="mb-3">
                             <label class="form-label">title</label>
                             <input type="text" class="form-control" name="title">
