@@ -19,8 +19,8 @@
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">img_path</label>
-                            <input type="text" class="form-control" name="img_path">
+                            <label class="form-label">thumb</label>
+                            <input type="text" class="form-control" name="thumb">
                         </div>
 
                         <div class="mb-3">
