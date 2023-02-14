@@ -4,7 +4,10 @@
     <main>
         <div class="container">
             <div class="row">
-                <table class="table table-dark table-hover mt-5 border border-primary border border-5 ">
+                <div class="col-12 mt-3">
+                    <a href="{{ route('comics.create') }}" class="btn btn-primary btn-sm">new-project</a>
+                </div>
+                <table class="table table-dark table-hover mt-4 border border-primary border border-5 ">
                     <thead>
                         <tr>
                             <th role="col">ID</th>
