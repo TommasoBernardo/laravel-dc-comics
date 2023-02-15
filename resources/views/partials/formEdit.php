@@ -1,5 +1,4 @@
 <form action="{{ route($route, $comic->id) }}" method="POST">
-    @csrf
 
     <div class="mb-5">
         <label class="form-label">Title</label>

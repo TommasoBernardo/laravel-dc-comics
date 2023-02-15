@@ -46,4 +46,14 @@ class ComicsController extends Controller
     {
         return view('admin.comics.edit', compact('comic'));
     }
+
+    public function update(Request $request, $id)
+    {
+        $form = $request->all();
+        $comic = Comic::findOrFail($id);
+
+        $comic->update($form);
+
+        return redirect()->route('comics.show', $comic->id);
+    }
 }
