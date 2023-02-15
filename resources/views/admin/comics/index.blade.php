@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 mt-3">
-                    <a href="{{ route('comics.create') }}" class="btn btn-primary btn-sm">new-project</a>
+                    <a href="{{ route('comics.create') }}" class="btn btn-primary btn-sm">new-comic</a>
                 </div>
                 <table class="table table-dark table-hover mt-4 border border-primary border border-5 ">
                     <thead>
@@ -29,6 +29,8 @@
                                 <td>
                                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary btn-sm">see
                                         more</a>
+                                    <a class="btn btn-sm btn-outline-warning"
+                                        href="{{ route('comics.edit', $comic->id) }}">Edit</a>
                                 </td>
                             </tr>
                         @endforeach
