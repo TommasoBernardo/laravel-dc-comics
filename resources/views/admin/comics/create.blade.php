@@ -19,8 +19,8 @@
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">thumb</label>
-                            <input type="text" class="form-control" name="thumb">
+                            <label class="form-label">img_path</label>
+                            <input type="url" class="form-control" name="thumb">
                         </div>
 
                         <div class="mb-3">
@@ -35,7 +35,7 @@
 
                         <div class="mb-3">
                             <label class="form-label">sale_date</label>
-                            <input type="text" class="form-control" name="sale_date">
+                            <input type="date" class="form-control" name="sale_date">
                         </div>
 
                         <div class="mb-3">
